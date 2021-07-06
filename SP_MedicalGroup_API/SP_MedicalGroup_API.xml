@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SP_MedicalGroup_API</name>
+    </assembly>
+    <members>
+        <member name="M:SP_MedicalGroup_API.Controller.ClinicaController.get">
+            <summary>
+            Metodo que lista todas as Clinicas cadastradas no Sistema
+            </summary>
+            <returns>Retorna uma lista contendo Todas as Clinicas</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ClinicaController.getById(System.Int32)">
+            <summary>
+            Metodo que Lista as informacoes de uma Clinica Baseado no ID passado como parametro para a Busca
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna as Informacoes de uma Clinica Especifica</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ClinicaController.post(SP_MedicalGroup_API.Domains.Clinica)">
+            <summary>
+            Metodo que Cadastra uma nova Clinica
+            </summary>
+            <param name="novaClinica"></param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ClinicaController.delete(System.Int32)">
+            <summary>
+            Metodo que Deleta o Cadastro de uma Clinica
+            </summary>
+            <param name="id"></param>
+            <returns>Status Code 202</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ClinicaController.put(System.Int32,SP_MedicalGroup_API.Domains.Clinica)">
+            <summary>
+            Metodo que Atualiza as informacoes de uma Clinica
+            </summary>
+            <param name="id"></param>
+            <param name="clinicaAtualizada"></param>
+            <returns>Status Code 203</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ConsultumController.get">
+            <summary>
+            Metodo que lista todas as Consultas Marcadas no Sistema
+            </summary>
+            <returns>Retorna uma lista contendo Todas as Consultas</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ConsultumController.getById(System.Int32)">
+            <summary>
+            Metodo que Lista as informacoes de uma Consulta, Baseado no ID passado como parametro para a Busca
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna as Informacoes de uma Consulta Especifica</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ConsultumController.post(SP_MedicalGroup_API.Domains.Consultum)">
+            <summary>
+            Metodo que Cadastra uma nova Consulta
+            </summary>
+            <param name="novaconsultum"></param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.ConsultumController.delete(System.Int32)">
+            <summary>
+            Metodo que Deleta os registros de uma Consulta
+            </summary>
+            <param name="id"></param>
+            <returns>Status Code 202</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SP_MedicalGroup_API.Controller.ConsultumController.put(System.Int32,SP_MedicalGroup_API.Domains.Consultum)" -->
+        <member name="M:SP_MedicalGroup_API.Controller.TipoUsuarioController.get">
+            <summary>
+            Metodo pra listar todos os Tipos de Usuarios
+            </summary>
+            <returns>Uma lista completa de todos os tipos de usuarios</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.TipoUsuarioController.getById(System.Int32)">
+            <summary>
+            Metodo pra listar apenas um tipo de usuario, baseado no seu ID
+            </summary>
+            <param name="id"></param>
+            <returns>Uma lista com as informacoes respectivas do Tipo De Usuario encontrado com o ID que foi passado como parametro de busca</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.TipoUsuarioController.post(SP_MedicalGroup_API.Domains.TipoDeUsuario)">
+            <summary>
+            Metodo para cadastrar um novo tipo de usuario
+            </summary>
+            <param name="novoTipoUsuario"></param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.TipoUsuarioController.delete(System.Int32)">
+            <summary>
+            Metodo que deleta um tipo de usuario baseado no ID passado como parametro de busca
+            </summary>
+            <param name="id"></param>
+            <returns>Status Code 202</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.TipoUsuarioController.put(System.Int32,SP_MedicalGroup_API.Domains.TipoDeUsuario)">
+            <summary>
+            Metodo que Atualiza as informações de um Tipo De Usuario
+            </summary>
+            <param name="id"></param>
+            <param name="tipoAtualizado"></param>
+            <returns>Status Code 203</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.UsuarioController.get">
+            <summary>
+            Metodo que lista todos os Usuarios presentes no Sistema
+            </summary>
+            <returns>Uma lista de todos os usuarios encontrados</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.UsuarioController.getById(System.Int32)">
+            <summary>
+            Metodo que lista todas as informacoes de um usuario especifico, baseado no ID passado como parametro para a Busca
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna todas as informacoes de um usuario especifico</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.UsuarioController.post(SP_MedicalGroup_API.Domains.Usuario)">
+            <summary>
+            Metodo que cadastra um novo usuario no Sistema
+            </summary>
+            <param name="novoUsuario"></param>
+            <returns>Status Code 201</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.UsuarioController.delete(System.Int32)">
+            <summary>
+            Metodo que deleta um usuario da plataforma
+            </summary>
+            <param name="id"></param>
+            <returns>Status Code 202</returns>
+        </member>
+        <member name="M:SP_MedicalGroup_API.Controller.UsuarioController.put(System.Int32,SP_MedicalGroup_API.Domains.Usuario)">
+            <summary>
+            Metodo que atualiza as informacoes de um usuario
+            </summary>
+            <param name="id"></param>
+            <param name="usuarioAtualizado"></param>
+            <returns>Status Code204</returns>
+        </member>
+    </members>
+</doc>
