@@ -67,6 +67,7 @@ namespace SP_MedicalGroup_API.Controller
         /// <param name="id"></param>
         /// <param name="consultumAtualizada"></param>
         /// <returns>Status Code 204</returns>
+        /// </summary>
         [HttpPut("{id}")]
         public IActionResult put(int id, Consultum consultumAtualizada)
         {

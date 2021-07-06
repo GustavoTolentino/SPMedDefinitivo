@@ -22,12 +22,13 @@ namespace SP_MedicalGroup_API
         public void ConfigureServices(IServiceCollection services)
         {
             services
-    .AddControllers()
-    .AddNewtonsoftJson(options =>
-    {
-        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-        options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-    });
+                .AddControllers()
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Hroads.webApi", Version = "v1" });
@@ -37,6 +38,7 @@ namespace SP_MedicalGroup_API
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+
             services
                 .AddAuthentication(options =>
                 {
