@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.area-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF5FB;
+    min-height: 100vh;
+}
+.area-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #83BEDF 1px solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 553px;
+    height: 653px;
+}
+.area-conteudo h3{
+    color: #83BEDF;
+    font-size: 40px;
+    font-family: Prompt;
+}
+.logo{
+    width: 152px;
+    height: 164px;
+}
+.area-inputs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* .input-mail{
+    padding: 3px;
+} */
+
+
+.input-mail p{
+    font-size: 16px;
+    font-family: Prompt;
+    color: #415E6F;
+    padding-bottom: 0px;
+}
+.input-mail input{
+    padding-top: 1px;
+}
+.input-senha p{
+    font-size: 16px;
+    font-family: Prompt;
+    color: #415E6F;
+}
+.area-inputs input{
+    border: solid , 2px;
+    border-radius: 10px;
+    border-color: #83BEDF;
+    width: 400px;
+    height: 40px;
+}
+.btnEntrar{
+    margin-top: 70px;
+    width: 139px;
+    height: 40px;
+    border: 2px solid #81DF99;
+    background-color: #81DF99;
+    border-radius: 10px;
+    margin-left: 65%;
+    font-family: Prompt;
+    font-weight: 1000;
+    font-size: 16px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.content-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

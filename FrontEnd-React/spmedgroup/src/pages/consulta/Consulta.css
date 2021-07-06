@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.area-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainArea h2{
+    font-size: 16px;
+    font-family: Prompt;
+    color: #415E6F;
+}
+.mainArea input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 2px #83BEDF;
+}
+.botao{
+    width: 139px;
+    height: 40px;
+    background: #81DF99;
+    color: #000000;
+    font-family: Prompt;
+    font-size: 16px;
+    border: solid 0px #415E6F;
+    border-radius: 10px;
+}
+.formarea{
+    display: flex;
+    flex-direction: column;
+}
+.divButton{
+    display: flex;
+    
+}
