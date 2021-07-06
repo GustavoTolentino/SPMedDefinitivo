@@ -1,0 +1,7 @@
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.csproj.AssemblyReference.cache
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.AssemblyInfoInputs.cache
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.AssemblyInfo.cs
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.csproj.CoreCompileInputs.cache
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\45911414899\Desktop\SPMedDefinitivo\SP_MedicalGroup_API\SP_MedicalGroup_API\obj\Debug\net5.0\SP_MedicalGroup_API.MvcApplicationPartsAssemblyInfo.cache
