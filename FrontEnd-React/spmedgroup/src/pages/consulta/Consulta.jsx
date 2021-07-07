@@ -13,8 +13,7 @@ export default class Consulta extends Component {
       idSituacao: 2,
       dataConsulta: "2021-06-30T13:20:44.034Z",
       exames: "Não",
-      descricao: "",
-      receita: ""
+      descricao: ""
     }
   }
   // teste 
@@ -28,8 +27,7 @@ export default class Consulta extends Component {
         idSituacao: this.state.idSituacao,
         dataConsulta: this.state.dataConsulta,
         exames: this.state.exames,
-        descricao: this.state.descricao,
-        receita: this.state.receita
+        descricao: this.state.descricao
       })
       .then(this.listarConsulta);
   }
@@ -69,9 +67,6 @@ export default class Consulta extends Component {
               <h2>Descricao</h2>
               <input type="text" onChange={this.atualizarState} name="descricao" value={this.state.descricao} className="inputs" />
 
-              <h2>Receita</h2>
-              <input type="text" onChange={this.atualizarState} name="receita" value={this.state.receita} className="inputs" />
-
               <div className="divButton">
                 <button type="submit" className="botao">Enviar</button>
               </div>
@@ -85,7 +80,6 @@ export default class Consulta extends Component {
                   <th>Paciente</th>
                   <th>Medico</th>
                   <th>Descricao</th>
-                  <th>receita</th>
                   <th>Data</th>
                 </tr>
               </thead>
@@ -97,7 +91,6 @@ export default class Consulta extends Component {
                         <td>{consulta.idPaciente}</td>
                         <td>{consulta.idMedico}</td>
                         <td>{consulta.descricao}</td>
-                        <td>{consulta.receita}</td>
                         <td>{consulta.dataConsulta}</td>
                       </tr>
                     )

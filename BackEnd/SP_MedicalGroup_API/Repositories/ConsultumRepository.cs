@@ -30,7 +30,6 @@ namespace SP_MedicalGroup_API.Repositories
                 consultaBuscada.DataConsulta = consultum.DataConsulta;
                 consultaBuscada.Descricao = consultum.Descricao;
                 consultaBuscada.Exames = consultum.Exames;
-                consultaBuscada.Receita = consultum.Receita;
 
                 _context.Consulta.Update(consultaBuscada);
                 _context.SaveChanges();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\SP_MedicalGroup_API\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj": {}
+    "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\BackEnd\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\SP_MedicalGroup_API\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj": {
+    "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\BackEnd\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\SP_MedicalGroup_API\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj",
+        "projectUniqueName": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\BackEnd\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj",
         "projectName": "SP_MedicalGroup_API",
-        "projectPath": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\SP_MedicalGroup_API\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj",
+        "projectPath": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\BackEnd\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj",
         "packagesPath": "C:\\Users\\45911414899\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\SP_MedicalGroup_API\\SP_MedicalGroup_API\\obj\\",
+        "outputPath": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\BackEnd\\SP_MedicalGroup_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45911414899\\AppData\\Roaming\\NuGet\\NuGet.Config",

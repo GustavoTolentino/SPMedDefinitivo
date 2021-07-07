@@ -14,8 +14,6 @@ namespace SP_MedicalGroup_API.Domains
         public DateTime DataConsulta { get; set; }
         public string Exames { get; set; }
         public string Descricao { get; set; }
-        public string Receita { get; set; }
-
         public virtual Medico IdMedicoNavigation { get; set; }
         public virtual Paciente IdPacienteNavigation { get; set; }
         public virtual Situacao IdSituacaoNavigation { get; set; }
