@@ -16,23 +16,35 @@ export default class Consulta extends Component {
         const resposta = await api.get('/Consultum');
         const dados = resposta.data;
 
-        this.setState({ listaConsultas : dados })
+        this.setState({ listaConsultas: dados })
     };
 
-    componentDidMount(){
+    componentDidMount() {
         this.buscarConsultas();
     };
 
-    render(){
-        return(
+    render() {
+        return (
             <View>
-
+                <View style={styles.main}>
+                    <FlatList
+                        contentContainerStyle={styles.listaMain}
+                        data={this.state.listaConsultas}
+                        keyExtractor={item => item.idConsulta}
+                        renderItem={this.renderItem}
+                    />
+                </View>
             </View>
-        )
+        );
     }
-    renderItem = ({item}) => (
-        <View>
-
+    renderItem = ({ item }) => (
+        <View contentContainerStyle={styles.mainBodyContent}>
+            <View style={styles.flatItemContainer}>
+                <Text style={styles.flatItemInfo}>{item.dataConsulta}</Text>
+                <Text style={styles.flatItemInfo}>{item.idMedicoNavigation.nome}</Text>
+                <Text style={styles.flatItemInfo}>{item.idPacienteNavigation.nome}</Text>
+                <Text style={styles.flatItemInfo}>{item.descricao}</Text>
+            </View>
         </View>
     )
 }

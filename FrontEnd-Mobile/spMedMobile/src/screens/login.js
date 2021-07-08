@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
-import { TouchableOpacity,  Image, ImageBackgroundBase,StyleSheet,Text,TextInput,Pressable,View } from 'react-native';
+import { TouchableOpacity, Image, ImageBackgroundBase, StyleSheet, Text, TextInput, Pressable, View } from 'react-native';
 
 import api from '../services/api';
 
 export default class Login extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            email : '',
-            senha : ''
+            email: '',
+            senha: ''
         }
     }
-
-    // Lembrar que assíncrono é uma forma de trabalhar com promises
     realizarLogin = async () => {
         try {
             const resposta = await api.post('/Login', {
-                email : this.state.email,
-                senha : this.state.senha
-            }) 
+                email: this.state.email,
+                senha: this.state.senha
+            })
 
             console.warn(this.state.email)
             console.warn(this.state.senha)
@@ -31,35 +29,35 @@ export default class Login extends Component {
 
             this.props.navigation.navigate('Consulta');
 
-        } catch(erro) {
+        } catch (erro) {
             console.warn(erro)
         }
 
-        
+
     };
-    render(){
-        return(
+    render() {
+        return (
             <View>
                 <View style={styles.divMain}>
                     <View style={styles.contentArea}>
-                        <Image style={styles.logo} source={'../../assets/logo.png'}/>
+                        <Image style={styles.logo} source={'../../assets/logo.png'} />
                         <Text style={styles.logoText}>SP Medical Group</Text>
 
                         <View style={styles.inputArea}>
                             <Text style={styles.inputText}>E-mail</Text>
-                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChange={email => this.setState({email})} />
+                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChange={email => this.setState({ email })} />
                         </View>
 
                         <View style={styles.inputArea}>
                             <Text style={styles.inputText}>Senha</Text>
-                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChange={senha => this.setState({senha})} />
+                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChange={senha => this.setState({ senha })} />
                         </View>
 
-                    <Pressable
-                        style={styles.btnLogin}
-                        onPress={this.realizarLogin}>
-                        <Text style={styles.btnLoginText}>Login</Text>
-                    </Pressable>
+                        <Pressable
+                            style={styles.btnLogin}
+                            onPress={this.realizarLogin}>
+                            <Text style={styles.btnLoginText}>Login</Text>
+                        </Pressable>
 
                     </View>
                 </View>
@@ -114,7 +112,7 @@ const styles = StyleSheet.create({
     },
     btnLoginText: {
         color: '#415E6F',
-        fontSize: '6px',
+        fontSize: '10px',
         fontFamily: 'Prompt'
     }
 })
