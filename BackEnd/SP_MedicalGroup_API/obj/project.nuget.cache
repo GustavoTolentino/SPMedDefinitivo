@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ltcOto9IGmANI4iIBLrcQoi+8ZdE5xHHDLqGMZ8Sh8X5V5e5Z8OteoxM7pwPr4mNHiszliYj8R4J7gQXaHwyIQ==",
+  "dgSpecHash": "ALodd3pbMaJ/kaTrRYbpS2QOlgm3jD4X+8+n0ln6mP1WFAyw8KEyaWpRYjoITtvJQpKWSsMdUfd1t/2NBq+/HQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\45911414899\\Desktop\\SPMedDefinitivo\\BackEnd\\SP_MedicalGroup_API\\SP_MedicalGroup_API.csproj",
   "expectedPackageFiles": [
@@ -143,9 +143,7 @@
     "C:\\Users\\45911414899\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\45911414899\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\45911414899\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\45911414899\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\45911414899\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
-    "C:\\Users\\45911414899\\.nuget\\packages\\xunit.extensibility.core\\2.4.1\\xunit.extensibility.core.2.4.1.nupkg.sha512"
+    "C:\\Users\\45911414899\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

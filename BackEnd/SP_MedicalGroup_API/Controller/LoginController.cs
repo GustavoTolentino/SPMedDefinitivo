@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace SP_MedicalGroup_API.Controller
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
@@ -47,7 +48,7 @@ namespace SP_MedicalGroup_API.Controller
                     new Claim("role", usuarioBuscado.IdTipoDeUsuario.ToString())
                 };
 
-                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("TolentinoKeyGRANDEOSUFICIENTEAGORA?"));
+                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("TolentinoKeyGRANDEOSUFICIENTEAGORA"));
 
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 

@@ -15,7 +15,6 @@ function Login() {
   const history = useHistory();
   async function btnEntrar_Click() {
     // setIsLoading(true);
-
     try {
       const response = await axios.post('http://localhost:5000/api/login',
         {
@@ -30,6 +29,7 @@ function Login() {
       console.log(error);
     }
   }
+  
   return (
     <div>
       <div className="area-main">

@@ -12,28 +12,26 @@ export default class Login extends Component {
         }
     }
 
-    // Lembrar que assíncrono é uma forma de trabalhar com promises
     realizarLogin = async () => {
-        try {
-            const resposta = await api.post('/Login', {
+        console.warn( this.state.email + ' ' + this.state.senha );
+
+            const resposta = await api.post('/login', {
+                headers: {
+                    'Access-Control-Allow-Origin' : '*'
+                },
                 email : this.state.email,
                 senha : this.state.senha
-            }) 
-
-            console.warn(this.state.email)
-            console.warn(this.state.senha)
+            });
 
             const token = resposta.data.token;
-
-            await AsyncStorage.setItem('userToken', token);
-
             console.warn(token)
+            
+            await AsyncStorage.setItem('userToken', token);
+            
 
             this.props.navigation.navigate('Consulta');
 
-        } catch(erro) {
-            console.warn(erro)
-        }
+       
 
         
     };
@@ -47,12 +45,12 @@ export default class Login extends Component {
 
                         <View style={styles.inputArea}>
                             <Text style={styles.inputText}>E-mail</Text>
-                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChange={email => this.setState({email})} />
+                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChangeText={email => this.setState({email})} />
                         </View>
 
                         <View style={styles.inputArea}>
                             <Text style={styles.inputText}>Senha</Text>
-                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChange={senha => this.setState({senha})} />
+                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChangeText={senha => this.setState({senha})} />
                         </View>
 
                     <Pressable
