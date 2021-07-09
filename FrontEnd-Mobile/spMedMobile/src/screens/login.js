@@ -11,19 +11,6 @@ export default class Login extends Component {
             senha: ''
         }
     }
-<<<<<<< HEAD
-
-    realizarLogin = async () => {
-        console.warn( this.state.email + ' ' + this.state.senha );
-
-            const resposta = await api.post('/login', {
-                headers: {
-                    'Access-Control-Allow-Origin' : '*'
-                },
-                email : this.state.email,
-                senha : this.state.senha
-            });
-=======
     realizarLogin = async () => {
         try {
             const resposta = await api.post('/Login', {
@@ -33,23 +20,18 @@ export default class Login extends Component {
 
             console.warn(this.state.email)
             console.warn(this.state.senha)
->>>>>>> 993f8aa27c76b5335efa91c47ba60e4dd233e005
 
             const token = resposta.data.token;
             console.warn(token)
-            
+
             await AsyncStorage.setItem('userToken', token);
-            
+
 
             this.props.navigation.navigate('Consulta');
 
-<<<<<<< HEAD
-       
-=======
         } catch (erro) {
             console.warn(erro)
         }
->>>>>>> 993f8aa27c76b5335efa91c47ba60e4dd233e005
 
 
     };
@@ -63,20 +45,12 @@ export default class Login extends Component {
 
                         <View style={styles.inputArea}>
                             <Text style={styles.inputText}>E-mail</Text>
-<<<<<<< HEAD
-                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChangeText={email => this.setState({email})} />
-=======
-                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChange={email => this.setState({ email })} />
->>>>>>> 993f8aa27c76b5335efa91c47ba60e4dd233e005
+                            <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChangeText={email => this.setState({ email })} />
                         </View>
 
                         <View style={styles.inputArea}>
                             <Text style={styles.inputText}>Senha</Text>
-<<<<<<< HEAD
-                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChangeText={senha => this.setState({senha})} />
-=======
-                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChange={senha => this.setState({ senha })} />
->>>>>>> 993f8aa27c76b5335efa91c47ba60e4dd233e005
+                            <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChangeText={senha => this.setState({ senha })} />
                         </View>
 
                         <Pressable
