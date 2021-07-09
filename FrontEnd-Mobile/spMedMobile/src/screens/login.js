@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, Image, ImageBackgroundBase, StyleSheet, Text, TextInput, Pressable, View } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import api from '../services/api';
 
