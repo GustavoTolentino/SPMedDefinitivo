@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SP_MedicalGroup_API.Domains;
 using SP_MedicalGroup_API.Interfaces;
 using SP_MedicalGroup_API.Repositories;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -73,6 +76,22 @@ namespace SP_MedicalGroup_API.Controller
         {
             _ConsultumRepository.update(id, consultumAtualizada);
             return StatusCode(204);
+        }
+
+        [HttpGet("Consulta")]
+        public IActionResult GetConsultas()
+        {
+            try
+            {
+                int idUsuario = Int32.Parse(HttpContext.User.Claims.First(x => x.Type == JwtRegisteredClaimNames.Jti).Value);
+                return Ok(_ConsultumRepository.ReadConsultas(idUsuario));
+                
+                //return Ok(idUsuario);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
     }
 }

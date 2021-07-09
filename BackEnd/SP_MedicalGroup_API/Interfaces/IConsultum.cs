@@ -13,5 +13,6 @@ namespace SP_MedicalGroup_API.Interfaces
         Consultum readId(int id);
         void update(int id, Consultum consultum);
         void delete(int id);
+        List<Consultum> ReadConsultas(int id);
     }
 }

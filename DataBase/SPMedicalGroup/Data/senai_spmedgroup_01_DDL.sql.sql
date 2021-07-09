@@ -59,7 +59,6 @@ CREATE TABLE Clinica(
 	NomeFantasia		VARCHAR(200) NOT NULL,
 	HorarioDeAbertura	VARCHAR(100) DEFAULT ('6AM'),
 	HorarioDeEncerrar	VARCHAR(100) DEFAULT ('23PM'),
-
 );
 GO
 

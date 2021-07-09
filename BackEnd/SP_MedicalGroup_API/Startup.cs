@@ -78,7 +78,7 @@ namespace SP_MedicalGroup_API
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Hroads.webApi");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SPMedicalGroup.webAPI");
                 c.RoutePrefix = string.Empty;
             });
 

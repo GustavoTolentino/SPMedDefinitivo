@@ -44,7 +44,7 @@ export default class Login extends Component {
                         <Image style={styles.logo} source={'../../assets/logo.png'} />
                         <Text style={styles.logoText}>SP Medical Group</Text>
 
-                        <View style={styles.inputArea}>
+                        <View style={styles.inputAreaemail}>
                             <Text style={styles.inputText}>E-mail</Text>
                             <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" onChangeText={email => this.setState({ email })} />
                         </View>
@@ -56,7 +56,8 @@ export default class Login extends Component {
 
                         <Pressable
                             style={styles.btnLogin}
-                            onPress={this.realizarLogin}>
+                            onPress={this.realizarLogin}
+                            >
                             <Text style={styles.btnLoginText}>Login</Text>
                         </Pressable>
 
@@ -76,30 +77,48 @@ const styles = StyleSheet.create({
         backgroundColor: '#EBF5FB',
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100vh',
+        width: '100vw'
     },
     contentArea: {
+        marginTop:'-30%' ,
         backgroundColor: '#ffffff',
+        width:'70%',
+        height:'65%' ,
         border: 'solid 1px #83BEDF',
-        borderRadius: "10px"
+        borderRadius: "10px",
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection:'column'
+        
     },
     logoText: {
+        marginTop: '-70%',
         color: '#83BEDF',
-        fontSize: '16px',
+        fontSize: '28px',
         fontFamily: 'Prompt',
+        position: 'absolute'
+    },
+    inputAreaemail:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop:'80px'
     },
     inputArea: {
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginTop: '20px'
     },
     inputText: {
         color: '#415E6F',
-        fontSize: '10px',
+        fontSize: '17px',
         fontFamily: 'Prompt'
     },
     input: {
+        textAlign: 'center',
         border: 'solid 1px #83BEDF',
         borderRadius: '10px',
-        width: '80px'
+        width: '150px'
     },
     btnLogin: {
         alignItems: 'center',
@@ -109,11 +128,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#81DF99',
         borderWidth: 1,
         borderRadius: 4,
-        marginTop: 20,
+        marginTop: 30,
+        marginBottom: -20,
+        border: 'solid 0.8px #c4c4c4 '
+
     },
     btnLoginText: {
         color: '#415E6F',
-        fontSize: '10px',
-        fontFamily: 'Prompt'
+        fontSize: '16px',
+        fontWeight: 'bold',
+        fontFamily: 'Prompt',
     }
 })

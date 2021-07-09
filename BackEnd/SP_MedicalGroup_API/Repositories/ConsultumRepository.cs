@@ -44,5 +44,32 @@ namespace SP_MedicalGroup_API.Repositories
         {
             return _context.Consulta.FirstOrDefault(x => x.IdConsulta == id);
         }
+        List<Consultum> IConsultum.ReadConsultas(int id)
+        {
+            return _context.Consulta.Select(x => new Consultum
+            {
+                IdConsulta = x.IdConsulta,
+                IdMedico = x.IdMedico,
+                IdPacienteNavigation = new Paciente
+                {
+                    IdPaciente = x.IdPacienteNavigation.IdPaciente,
+                    NomePaciente = x.IdPacienteNavigation.NomePaciente,
+                    IdUsuario = x.IdPacienteNavigation.IdUsuario
+                },
+                IdMedicoNavigation = new Medico
+                {
+                    IdMedico = x.IdMedicoNavigation.IdMedico,
+                    NomeMedico = x.IdMedicoNavigation.NomeMedico,
+                    IdUsuario = x.IdMedicoNavigation.IdUsuario
+                },
+                IdSituacaoNavigation = new Situacao
+                {
+                    IdSituacao = x.IdSituacaoNavigation.IdSituacao,
+                    TipoSituacao = x.IdSituacaoNavigation.TipoSituacao
+                },
+                Descricao = x.Descricao,
+                DataConsulta = x.DataConsulta
+            }).Where(x => x.IdPacienteNavigation.IdUsuario  == id || x.IdMedicoNavigation.IdUsuario == id).ToList();
+        }
     }
 }
