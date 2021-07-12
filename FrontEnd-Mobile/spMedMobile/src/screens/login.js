@@ -33,15 +33,13 @@ export default class Login extends Component {
         } catch (erro) {
             console.warn(erro)
         }
-
-
     };
     render() {
         return (
             <View>
                 <View style={styles.divMain}>
                     <View style={styles.contentArea}>
-                        <Image style={styles.logo} source={'../../assets/logo.png'} />
+                        <Image style={styles.logo} source={'../img/logo_spmedgroup_v1.png'} />
                         <Text style={styles.logoText}>SP Medical Group</Text>
 
                         <View style={styles.inputAreaemail}>
